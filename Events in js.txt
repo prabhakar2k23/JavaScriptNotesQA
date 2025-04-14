@@ -1,0 +1,36 @@
+Events in javaScript
+ firstContainer.addEventListener('click', function(){
+          console.log("Click on container")
+ })
+ firstContainer.addEventListener('mouseover', function(){
+         console.log("mouse on container")
+ })
+ firstContainer.addEventListener('mouseout', function(){
+         console.log("mouse out of container")
+ })
+ firstContainer.addEventListener('mouseup', function(){
+         console.log("mouse up when clicked on container")
+ })
+ firstContainer.addEventListener('mousedown', function(){
+         console.log("mouse down when clicked on container")
+ })
+ 
+ 
+ // Arrow functions
+// function summ(a, b){
+//         return a+b;
+// }      or
+summ = (a,b)=>{
+        return a+b;
+}
+
+
+// setTimeout and setinterval
+logkaro = ()=>{
+        console.log("I am your log")
+}
+setTimeout(logkaro, 2000);    it means after 2 seconds will be print -> I am your log
+clr = setTimeout(logkaro, 2000); stop setTimeout
+
+setInterval(logkaro, 2000);  it will be print after 2 seconds and repeat each 2 seconds again and again  
+clr = setInterval(logkaro, 2000);  stop setInterval

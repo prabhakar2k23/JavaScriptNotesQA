@@ -1,0 +1,15 @@
+The JavaScript switch statement is used to execute one code from multiple expressions. It is just like else if statement that we have learned in previous page. But it is convenient than if..else..if because it can be used with numbers, characters etc.
+
+var grade='6';    
+switch(grade){  
+case 'A':  
+console.log("A Grade");  
+break;  
+case 'B':  
+console.log("B Grade");  
+break;  
+case 'C':  
+console.log("C Grade");  
+break;  
+default:  
+console.log("No Grade"); } 

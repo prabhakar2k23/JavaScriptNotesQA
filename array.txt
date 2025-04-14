@@ -1,0 +1,38 @@
+        /* Array method */
+// anyone add or remove to arry
+let myarr = ["Fan", "camera", 34, null, true];
+console.log(myarr.length);
+myarr.shift("Fan")    // It means remove fan from arr  ["camera", 34, null, true];
+myarr.unshift("Raja");// Add Raja in arr - in starting ["Raja", Fan", "camera", 34, null, true];
+myarr.push("samrat"); // Add samrat in arr - last side ["Fan", "camera", 34, null, true, "samrat"];
+
+
+// anyone add or remove to arry & add his length
+let myarr = ["Fan", "camera", 34, null, true];
+console.log(myarr.length);
+ const newlen = myarr.unshift("Raja")
+ console.log(newlen);
+console.log(myarr);
+
+         /* String method */
+// you can check string length  & index 
+let string = "Prabhakar is a intelligent boy";
+console.log(string.length);
+console.log(string.indexOf("Prabhakar"));
+console.log(string.slice(1,6));
+// Replace name to another name
+d = string.replace("Prabhakar", "Samrat");
+console.log(d);
+
+
+        /* Date method in js */
+let myDate = new Date();
+console.log(myDate);               // get time like  dd-mm-yy
+console.log(myDate.getTime());     // get tine only seconds
+console.log(myDate.getFullYear()); // get tine only Year
+console.log(myDate.getDay());      // get tine only day
+console.log(myDate.getMinutes());
+console.log(myDate.getHours());
+
+
+

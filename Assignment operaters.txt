@@ -1,0 +1,7 @@
+// Assignment operaters
+var a=30;
+var b=15;
+var c=b;
+c += 5;    //it means c=c+5
+c *= 3;    //it means b=b*3  
+console.log(c);

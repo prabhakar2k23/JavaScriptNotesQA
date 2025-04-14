@@ -1,0 +1,10 @@
+// javaScript localStorage
+
+localStorage.setItem('name', 'Samrat')
+undefined
+localStorage.getItem('name')
+"Samrat"
+localStorage.clear()
+undefined
+localStorage.removeItem('name')
+undefined 

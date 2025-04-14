@@ -1,0 +1,8 @@
+// Airthmatic operators
+var a=30;
+var b=15;
+console.log("value of a + b =", a+b);
+console.log("value of a * b =", a*b);
+console.log("value of a - b =", a-b);
+console.log("value of a / b =", a/b);
+console.log("value of a % b =", a%b);

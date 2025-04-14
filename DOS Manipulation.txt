@@ -1,0 +1,34 @@
+// DOM Manipulation
+        // method 1
+let elem = document.getElementById('click');
+//console.log(elem);
+
+let elemClass = document.getElementsByClassName("container")
+//console.log(elemClass);
+//elemClass[0].Style.background = "yellow"
+elemClass[0].classList.add("bg-primary")
+elemClass[0].classList.add("text-success")
+//console.log(elem.innerHTML);
+//console.log(elem.innerText);
+
+//console.log(elemClass[0].innerHTML);
+//console.log(elemClass[0].innerText);
+tn = document.getElementsByTagName('button')
+console.log(tn)
+createElement = document.createElement('p');
+createElement.innerText = "This is a created part" 
+tn[0].appendChild(createElement);
+// removeChild(element); ---> removes an element
+       //selecting using quiry
+sel = document.querySelector('.container')
+console.log(sel)
+sel = document.querySelectorAll('.container')
+console.log(sel) 
+
+      
+function clicked(){
+        console.log('The button was clicked')
+}
+window.onload = function(){
+         console.log('The document was loaded')
+}
