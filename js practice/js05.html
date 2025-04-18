@@ -6,6 +6,8 @@
     <title>Document</title>
 </head>
 <body>
+
+    <div id="data"></div>
    <script>
         const products = [
                         { name: "Laptop", price: 1500, inStock: true },
@@ -15,10 +17,11 @@
                     ];
 
         function getProduct(product){
-            let result = product.filter(p=>p.inStock && p.price <= 1000).map(user=>user.name);
+            let result = product.filter(p=>p.inStock && p.price <= 1000).map(user=> `${user.name}: ${user.price}$`);
             return result.length > 0 ? result : "No affordable products in stock.";
         }
-        console.log(getProduct(products));
+        const res = getProduct(products);
+        document.getElementById('data').innerHTML = res.join('<br>');
    </script>
 </body>
 </html>
