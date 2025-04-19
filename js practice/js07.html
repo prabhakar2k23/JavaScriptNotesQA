@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        table {
+      width: 60%;
+      border-collapse: collapse;
+      margin: 20px auto;
+    }
+    th, td {
+      border: 1px solid #ccc;
+      padding: 10px;
+      text-align: left;
+    }
+    th {
+      background-color: #f4f4f4;
+    }
+    button{
+        background: #28ae14;
+        padding: 7px;
+        border-top-right-radius:13px ;
+        border-bottom-left-radius: 13px;
+        margin: 7px;
+        margin-left: 10em;
+    }
+    h3, p{
+        display: flex;
+        text-align: center;
+        justify-content: center;
+    }
+    </style>
+</head>
+<body>
+    <table>
+        <thead>
+          <tr>
+            <th>Name</th>
+            <th>Salary</th>
+            <th>Status</th>
+          </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Ravi</td>
+                <td>55000</td>
+                <td>true</td>
+              </tr>
+              <tr>
+                <td>Neha</td>
+                <td>48000</td>
+                <td>false</td>
+              </tr>
+              <tr>
+                <td>Amit</td>
+                <td>61000</td>
+                <td>true</td>
+              </tr>
+              <tr>
+                <td>Sweta</td>
+                <td>45000</td>
+                <td>true</td>
+              </tr>
+              <tr>
+                <td>Vikram</td>
+                <td>65000</td>
+                <td>false</td>
+              </tr>
+              <tr>
+                <td>Samrat</td>
+                <td>67000</td>
+                <td>true</td>
+              </tr>
+        </tbody>
+      </table>
+    <h3>Create a function that filters employees who are: </h3>
+        <p> active === true  <span>salary >= 50000</span></p> 
+    <h3>When the user clicks a button, show the result in this format:</h3>
+    <div id="show"></div>
+    <button onclick="showEmployees()">Show Employees</button>
+
+
+   <div id="result"></div>
+    <script>
+        const employees = [
+                            { name: "Ravi", salary: 55000, active: true },
+                            { name: "Neha", salary: 48000, active: false },
+                            { name: "Amit", salary: 61000, active: true },
+                            { name: "Priya", salary: 45000, active: true },
+                            { name: "Vikram", salary: 65000, active: false },
+                            { name: "Samrat", salary: 67000, active: true }
+                        ];
+
+    function showEmployees() {
+      const filtered = employees.filter(e => e.active && e.salary >= 50000);
+      const rows = filtered.map(e => `<tr><td>${e.name}</td><td>₹${e.salary}</td></tr>`).join("");
+      
+      document.getElementById("result").innerHTML = 
+        filtered.length > 0
+        ? `<table border="1"><tr><th>Name</th><th>Salary</th></tr>${rows}</table>`
+        : "No active employees with sufficient salary.";
+    }  
+    </script>
+</body>
+</html>
