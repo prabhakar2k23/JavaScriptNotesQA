@@ -1,14 +1,4 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
 
-    <div id="data"></div>
-   <script>
         const products = [
                         { name: "Laptop", price: 1500, inStock: true },
                         { name: "Phone", price: 800, inStock: false },
@@ -22,6 +12,3 @@
         }
         const res = getProduct(products);
         document.getElementById('data').innerHTML = res.join('<br>');
-   </script>
-</body>
-</html>

@@ -1,14 +1,4 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    <script>
-
-    //Absolute value
+  //Absolute value
     console.log(Math.abs(-17))
 
    //Rounds to the nearest integer
@@ -22,6 +12,4 @@
 
    //Removes decimal part
     console.log(Math.trunc(4.9))
-    </script>
-</body>
-</html>
+    

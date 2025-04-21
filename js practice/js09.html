@@ -7,17 +7,13 @@
 </head>
 <body>
     <script>
-        function greet(name, callback) {
-            console.log("Hello, " + name + "!");
-            callback();
-        }
+        console.log("Start");
 
-        function sayGoodbye() {
-            console.log("Goodbye!");
-        }
+        setTimeout(function() {
+            console.log("Callback function executed after 1000ms");
+        }, 1000);
 
-        greet("Alice", sayGoodbye);
-
+        console.log("End");
 
     </script>
 </body>

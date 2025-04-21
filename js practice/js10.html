@@ -7,14 +7,9 @@
 </head>
 <body>
     <script>
-        console.log("Start");
-
-        setTimeout(function() {
-            console.log("Callback function executed after 1000ms");
-        }, 1000);
-
-        console.log("End");
-
+        let message = "Hello, JavaScript World!";
+        let result = message.slice(7, 17).replace("JavaScript", "JS");
+        console.log(result.includes("JS"));
     </script>
 </body>
 </html>

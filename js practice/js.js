@@ -1,14 +1,4 @@
 
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
-    <script>
         let amount = 5235;
         if( amount>= 500){
             console.log("500 Notes : " + Math.floor(amount/500));
@@ -46,6 +36,4 @@
             console.log("1 Coins : " + Math.floor(amount/1));
             amount = amount % 1;
         }
-    </script>
-</body>
-</html>
+    

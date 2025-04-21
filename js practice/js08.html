@@ -7,14 +7,17 @@
 </head>
 <body>
     <script>
-        function myFunc(a, b, ...rest) {
-            console.log('a:', a);
-            console.log('b:', b);
-            console.log('rest:', rest);
+        function greet(name, callback) {
+            console.log("Hello, " + name + "!");
+            callback();
         }
 
-    const arr = [1, 2, 3, 4, 5];
-    myFunc(...arr);
+        function sayGoodbye() {
+            console.log("Goodbye!");
+        }
+
+        greet("Alice", sayGoodbye);
+
 
     </script>
 </body>
